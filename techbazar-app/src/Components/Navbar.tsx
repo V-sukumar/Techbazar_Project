@@ -27,8 +27,10 @@ function Navbar() {
   const [isAtTop, setIsAtTop] = useState<Boolean>(false);
   const {isAuth}=useSelector((store:any)=>store.authReducer)
   const dispatch = useDispatch()
-  const name=JSON.parse(localStorage.getItem("userName")||"")
+ 
   const count=JSON.parse(localStorage.getItem("count")||"")
+  const name=localStorage.getItem("userName")||""
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -125,7 +127,7 @@ function Navbar() {
 
         <div className="Account">
 
-          {isAuth?<div onClick={()=>{
+          {isAuth?<div style={{marginRight:"28px"}} onClick={()=>{
             Swal.fire(
               'Successfull!',
               'You logout Successfully!',
@@ -136,14 +138,14 @@ function Navbar() {
             
           }}>
             
-            <Text style={{color:"black"}}><FontAwesomeIcon icon={faUser} size="sm" />{" "}{name}</Text>
+            <Text style={{color:"black", marginRight:"28px", display:"inline"}}><FontAwesomeIcon icon={faUser} size="sm" />{" "}{name}</Text>
             <FontAwesomeIcon icon={faArrowRightFromBracket} size="sm" />{" "}
             
             <Link to="" className="AccountLinks">
               Logout
             </Link>
           </div> :
-          <div>
+          <div style={{marginRight:"28px"}}>
           <FontAwesomeIcon icon={faUser} size="sm" />{" "}
           <Link to="/login" className="AccountLinks">
             Account
