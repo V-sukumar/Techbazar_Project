@@ -3,15 +3,33 @@ import Logo from "../Images/Logo.png"
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCartFlatbedSuitcase,faGift,faCircleInfo} from '@fortawesome/free-solid-svg-icons';
 import { } from '@fortawesome/free-brands-svg-icons'
+import {
+  Box,
+  Container,
+  Link,
+  SimpleGrid,
+  Stack,
+  Text,
+ Button,Image, Heading
+} from '@chakra-ui/react';
 function Footer() {
-  return (
-    <div className='footerMainDiv'>
-        <div className='mainFooter'>
-            <div style={{width:"30%"}}>
-                <img src={Logo} alt="logo" id='imgFooter' />
-                <p style={{margin:"20px 0px 30px 0px", fontSize:"14px"}}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas magni ab distinctio assumenda, vel ratione accusamus impedit sapiente illo aliquam.</p>
-                <p style={{fontWeight:"700"}}>Account Payments</p>
-                <div style={{display:"grid", gridTemplateColumns:"repeat(4, 1fr)", margin:"20px 0px 0px 0px", width:"300px", gap:"10px"}}>
+  return <div>
+        <Box
+      bg={"none"}
+      color={"white"}>
+      <Container as={Stack} maxW={'6xl'} py={10}  mt={10}>
+        <SimpleGrid
+          templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 1fr 1fr' }}
+          spacing={8}>
+          <Stack spacing={6}>
+            <Box textAlign={"justify"}>
+              <Image w={200} src={Logo} />
+            </Box>
+            <Box mr={50}>
+            <Text textAlign={"justify"} fontSize={14} fontWeight={600} color={"black"} >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas magni ab distinctio assumenda, vel ratione accusamus impedit sapiente illo aliquam.</Text>
+            </Box>
+            <Text fontSize={20} fontWeight={600} color={"black"}>Account Payments</Text>
+            <div style={{display:"grid", gridTemplateColumns:"repeat(4, 1fr)", margin:"10px 100px 0px 0px", width:"300px", gap:"10px"}}>
                   <div className='smallImageBox'>
                     <img src="https://media.designrush.com/inspiration_images/135142/conversions/_1511452770_462_stripe-preview.jpg" alt="img" />
                   </div>
@@ -36,71 +54,75 @@ function Footer() {
                   <div className='smallImageBox'>
                     <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202011/Screenshot_2020-11-05_at_5.14._1200x768.png?size=690:388" alt="img" />
                   </div>
-                </div>
-            </div>
-            <div className='linkDivs'>
-                <p className='footerHeadings'>Department</p>
-                <a href="">Fashion</a>
-                <a href="">Education Products</a>
-                <a href="">Frozen Food</a>
-                <a href="">Beverages</a>
-                <a href="">Organic Grocery</a>
-                <a href="">Office Supplies</a>
-                <a href="">Beauty Products</a>
-                <a href="">Books</a>
-                <a href="">Electronic & Gadges</a>
-                <a href="">Trivel Accessories</a>
-                <a href="">Fitness</a>
-                <a href="">Sneakers</a>
-                <a href="">Toys</a>
-                <a href="">Furniture</a>
-            </div>
-            <div className='linkDivs'>
-                <p className='footerHeadings'>About Us</p>
-                <a href="">About Shopcart</a>
-                <a href="">Careers</a>
-                <a href="">News & Blogs</a>
-                <a href="">Help</a>
-                <a href="">Press Center</a>
-                <a href="">Shop by Location</a>
-                <a href="">Shopcard Brands</a>
-                <a href="">Affiliate & Partners</a>
-                <a href="">Ideas & Guides</a>
-            </div>
-            <div className='linkDivs'>
-                <p className='footerHeadings'>Servises</p>
-                <a href="">Gift Cart</a>
-                <a href="">Mobile App</a>
-                <a href="">Shipping & Delivery</a>
-                <a href="">Order Pickup</a>
-                <a href="">Account Signup</a>
-            </div>
-            <div className='linkDivs'>
-                <p className='footerHeadings'>Help</p>
-                <a href="">Shopcart Help</a>
-                <a href="">Returns</a>
-                <a href="">Track Orders</a>
-                <a href="">Contact us</a>
-                <a href="">Organic Grocery</a>
-                <a href="">Feedback</a>
-                <a href="">Security & Fraud</a>
-            </div>
-        </div>
-
-        <div className='footerBottom'>
-           <div style={{display:"flex", justifyContent:"space-between", width:"360px"}}>
+              </div>
+          </Stack>
+          <Stack align={'flex-start'} fontSize={14} fontWeight={400} color={"black"} >
+            <Link fontSize={18}> <b>Department</b></Link>
+            <Link href={'/'}>Fashion</Link>
+            <Link href={'/'}>Education Products</Link>
+            <Link href={'/'}>Frozen Food</Link>
+            <Link href={'/'}>Beverages</Link>
+            <Link href={'/'}>Organic Grocery</Link>
+            <Link href={'/'}>Office Supplies</Link>
+            <Link href={'/'}>Beauty Products</Link>
+            <Link href={'/'}>Books</Link>
+            <Link href={'/'}>Electronic & Gadges</Link>
+            <Link href={'/'}>Trivel Accessories</Link>
+            <Link href={'/'}>Fitness</Link>
+            <Link href={'/'}>Sneakers</Link>
+            <Link href={'/'}>Toys</Link>
+            <Link href={'/'}>Furniture</Link>
+          </Stack>
+          <Stack align={'flex-start'} fontSize={14} fontWeight={400} color={"black"}>
+            <Link fontSize={18}><b>About Us</b></Link>
+            <Link href={'/'}>About Shopcart</Link>
+            <Link href={'/'}>Careers</Link>
+            <Link href={'/'}>News & Blogs</Link>
+            <Link href={'/'}>Help</Link>
+            <Link href={'/'}>Press Center</Link>
+            <Link href={'/'}>Shop by Location</Link>
+            <Link href={'/'}>Shopcard Brands</Link>
+            <Link href={'/'}>Affiliate & Partners</Link>
+            <Link href={'/'}>Ideas & Guides</Link>
+          </Stack>
+          <Stack align={'flex-start'} fontSize={14} fontWeight={400} color={"black"}>
+            <Link fontSize={18} ><b>Servises</b></Link>
+            <Link href={'/'}>Gift Cart</Link>
+            <Link href={'/'}>Mobile App</Link>
+            <Link href={'/'}>Shipping & Delivery</Link>
+            <Link href={'/'}>Order Pickup</Link>
+            <Link href={'/'}>Account Signup</Link>
+          </Stack>
+          <Stack align={'flex-start'} fontSize={14} fontWeight={400} color={"black"}>
+            <Link fontSize={18} ><b>Help</b></Link>
+            <Link href={'#'}>Shopcart Help</Link>
+            <Link href={'#'}>Returns</Link>
+            <Link href={'#'}>Track Orders</Link>
+            <Link href={'#'}>Contact us</Link>
+            <Link href={'#'}>Organic Grocery</Link>
+            <Link href={'#'}>Feedback</Link>
+            <Link href={'#'}>Security & Fraud</Link>
+          </Stack>
+        </SimpleGrid>
+      </Container>
+    </Box>
+    <div className='footerBottom' style={{width:"90%",margin:"auto"}}>
+            <div style={{display:"flex", justifyContent:"space-between", width:"360px"}}>
         <div> <FontAwesomeIcon icon={faCartFlatbedSuitcase} style={{color: "#df3ad9",}} /> Become Seller</div>
         <div> <FontAwesomeIcon icon={faGift} style={{color: "#df3ad9",}} /> Gift Cards </div>
         <div> <FontAwesomeIcon icon={faCircleInfo}  style={{color: "#df3ad9",}} /> Help Center</div>
            </div>
            <div style={{display:"flex", justifyContent:"space-between", width:"190px"}}>
-           <div>Terms of Use</div>
-           <div>Privacy Policy</div>
-           </div>
-           <div>All Right Reserved By Musemind | 2023</div>
-        </div>
-    </div>
-  )
+            <div>Terms of Use</div>
+            <div>Privacy Policy</div>
+            </div>
+            <div>All Right Reserved By Musemind | 2023</div>
+         </div>
+     </div> 
 }
 
 export default Footer
+
+
+
+            
