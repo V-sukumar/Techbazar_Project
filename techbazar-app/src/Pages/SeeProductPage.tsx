@@ -165,7 +165,7 @@
 
 
 import React, { useEffect, useState } from 'react';
-import { Box, Button, Table, Thead, Tbody, Tr, Th, Td, Heading } from '@chakra-ui/react';
+import { Button, Heading } from '@chakra-ui/react';
 import styled from "@emotion/styled";
 
 interface Product {
@@ -180,6 +180,7 @@ interface Product {
 const SeeProductPage: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
 
+ 
   useEffect(() => {
     const fetchProducts = async () => {
       try {
@@ -218,6 +219,8 @@ const SeeProductPage: React.FC = () => {
       console.error('Error deleting product', error);
     }
   };
+
+  
 
   return (
     <DIV>

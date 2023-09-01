@@ -1,12 +1,10 @@
-import react, { useState } from "react"
+import  { useState } from "react"
 import { singleProduct } from "../Redux/ProductReducer/reducer"
 import styled from "@emotion/styled";
 import { useNavigate } from "react-router-dom";
 import {
    Alert,
    AlertIcon,
-   AlertTitle,
-   AlertDescription,
  } from '@chakra-ui/react'
 
 export const ProductCard=({id,title,image,description,price,category,brand}:singleProduct)=>{
