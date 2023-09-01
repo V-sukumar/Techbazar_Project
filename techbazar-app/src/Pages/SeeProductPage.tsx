@@ -165,11 +165,14 @@
 
 
 import React, { useEffect, useState } from 'react';
-import { Box, Button, Table, Thead, Tbody, Tr, Th, Td } from '@chakra-ui/react';
+import { Box, Button, Table, Thead, Tbody, Tr, Th, Td, Heading } from '@chakra-ui/react';
+import styled from "@emotion/styled";
 
 interface Product {
   id: number;
   title: string;
+  src:String;
+  image:string
   description: string;
   price: number;
 }
@@ -210,40 +213,79 @@ const SeeProductPage: React.FC = () => {
         // Handle error cases
         console.error('Error deleting product');
       }
+      alert("Product Deleted")
     } catch (error) {
       console.error('Error deleting product', error);
     }
   };
 
   return (
-    <Box  margin={'80px 80px 0px 80px'}>
-      <h2>Products</h2>
-      <Table variant="striped" colorScheme="teal">
-        <Thead>
-          <Tr>
-            <Th>Name</Th>
-            <Th>Description</Th>
-            <Th>Price</Th>
-            <Th>Action</Th>
-          </Tr>
-        </Thead>
-        <Tbody>
-          {products.map((product) => (
-            <Tr key={product.id}>
-              <Td>{product.title}</Td>
-              <Td>{product.description}</Td>
-              <Td>{product.price}</Td>
-              <Td>
-                <Button colorScheme="red" onClick={() => handleDeleteProduct(product.id)}>
-                  Delete
-                </Button>
-              </Td>
-            </Tr>
-          ))}
-        </Tbody>
-      </Table>
-    </Box>
+    <DIV>
+      <Heading mt={10}>Products</Heading>
+      <div className='div'>
+      {products.map((ele)=>(
+        <div className="card">
+        <img src={ele.image} alt="" />
+        <h3>{ele.title}</h3>
+        <h3>₹{ele.price}</h3>
+        <Button colorScheme="red" onClick={() => handleDeleteProduct(ele.id)}>
+                 Delete
+               </Button>
+        </div>
+      ))}
+      </div>
+      
+       
+    </DIV>
   );
 };
+const DIV=styled.div`
+ width :90% ;
+ margin: auto;
+ .div{
+  display: grid;
+ grid-template-columns: repeat(4,1fr);
+ gap: 15px;
+ margin: auto;
+ }
+ img{
+height: 200px;
+margin: auto;
+}
+.card{
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   padding: 5px;
+   border-radius: 20px;
+   margin-top: 20px;
+}
+.card:hover{
+   transform: scale(1.03);
+   cursor: pointer;
+   transition: 0.2s ease-in-out;
+}
+text-align:center;
+@media all and  (min-width:751) {
+        .div{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 6px;
+        }
+        
+    }
+    @media screen and (min-width: 451px) and (max-width:750px) {
+      .div{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 6px;
+        }
+    }
+    @media screen and (max-width: 450px) {
+      .div{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 6px;
+        }
+    }
+`
 
 export default SeeProductPage;
