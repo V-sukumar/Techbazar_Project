@@ -3,6 +3,9 @@
 # Techbazar
 -  https://techbazar-app.vercel.app
 
+# JSON server lik
+  https://techbazaar.onrender.com
+
 # About
 
 -TECHBAZAAR is an e-commerce web site for tech related products, designed to provide a user experience.
