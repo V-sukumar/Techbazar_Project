@@ -10,7 +10,9 @@ import { Link } from "react-router-dom";
 export const CartPage=()=>{
 const [cart,setCart]=useState<cartItem[]|[]>([]);
 const [Total,setTotal]=useState<number>(0);
-localStorage.setItem("count",JSON.stringify(cart.length))
+
+localStorage.setItem("count",(cart.length+""));
+
 function getProduct(){
     axios.get(`https://techbazaar.onrender.com/Carts`).then((res)=>{
 setCart(res.data);

@@ -28,8 +28,8 @@ function Navbar() {
   const {isAuth}=useSelector((store:any)=>store.authReducer)
   const dispatch = useDispatch()
  
-  const count=JSON.parse(localStorage.getItem("count")||"")
-  const name=localStorage.getItem("userName")||""
+  const count = localStorage.getItem("count")|| 0
+  const name =localStorage.getItem("userName")||""
 
   useEffect(() => {
     const handleScroll = () => {
@@ -153,10 +153,13 @@ function Navbar() {
         </div>
           }
           
-          <div>
-            <Link to="/cart" className="AccountLinks"><Text  border={"1px solid"} width={6} bgColor={"#00472F"} color={"white"} textAlign={"center"} margin={"auto"} borderRadius={"full"}>{count}</Text>
+          <div style={{display:"flex"}}>
+            <Link to="/cart" className="AccountLinks" style={{display:"inline"}}>
             <FontAwesomeIcon  icon={faCartShopping} size="lg" />{"Carts"}
             </Link>
+            <div style={{background:"#00472F", borderRadius:"50px",width:"26px", marginLeft:"4px" }}>
+            <Text textAlign={"center"} color={"#fff"}>{count}</Text>
+            </div>
             
             
             
