@@ -1,6 +1,6 @@
-# Techbazar
+# Techbazaar
 
-## Techbazar Deploy link
+## Techbazaar Deploy link
 -  https://techbazar-app-v-sukumar.vercel.app
 
 ## JSON server link
