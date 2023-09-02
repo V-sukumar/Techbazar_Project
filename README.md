@@ -1,7 +1,7 @@
 # -remarkable-ic
 
 # Techbazar
--  https://techbazar-app.vercel.app
+-  https://techbazar-app-v-sukumar.vercel.app
 
 # JSON server link
   https://techbazaar.onrender.com
