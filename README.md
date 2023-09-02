@@ -3,7 +3,7 @@
 # Techbazar
 -  https://techbazar-app.vercel.app
 
-# JSON server lik
+# JSON server link
   https://techbazaar.onrender.com
 
 # About
