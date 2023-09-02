@@ -35,18 +35,17 @@
 ![Screenshot (62)](https://github.com/neo1710/-remarkable-ic/assets/115460455/568f6096-1637-415d-90fc-a63ba2ee1fd1)
 
 -Product Page
-![Screenshot (186)](https://github.com/neo1710/-remarkable-ic/assets/115460777/3abbf829-a843-42a5-9d90-84cca8e282bf)
+![Screenshot (186)](https://github.com/V-sukumar/V-sukumar.github.io/assets/115460777/3029dee1-63ce-4e25-9cb2-25a076268c6c)
 
 -Single Product Page
-![Screenshot (187)](https://github.com/neo1710/-remarkable-ic/assets/115460777/628d751b-5804-4a25-a6a3-777f1038d13c)
+![Screenshot (187)](https://github.com/V-sukumar/V-sukumar.github.io/assets/115460777/2714072b-5d86-4acd-9602-a06624919f75)
 
 -Admin Page
-![Screenshot (190)](https://github.com/neo1710/-remarkable-ic/assets/115460777/aa359512-7e12-4fd4-8db0-d63516c83513)
+![Screenshot (190)](https://github.com/V-sukumar/V-sukumar.github.io/assets/115460777/35ff39dd-87da-47a9-91f2-098b124b1413)
 
 -Cart Page and Checkout Page
-![Screenshot (188)](https://github.com/neo1710/-remarkable-ic/assets/115460777/a8f037e1-b628-49b8-b6bb-0d82d5721442)
-![Screenshot (189)](https://github.com/neo1710/-remarkable-ic/assets/115460777/ddedbdf1-6c50-49eb-a05c-dd14a2c202d3)
-
+![Screenshot (188)](https://github.com/V-sukumar/V-sukumar.github.io/assets/115460777/1ae60667-0ea3-4fe6-8142-39227b59bdb5)
+![Screenshot (189)](https://github.com/V-sukumar/V-sukumar.github.io/assets/115460777/5d74899d-4246-473c-9040-0baf3b149991)
 # Features and Functionalities
 
 -Login & Sign up
