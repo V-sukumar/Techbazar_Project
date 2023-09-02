@@ -35,14 +35,17 @@
 ![Screenshot (62)](https://github.com/neo1710/-remarkable-ic/assets/115460455/568f6096-1637-415d-90fc-a63ba2ee1fd1)
 
 -Product Page
-![Screenshot (63)](https://github.com/neo1710/-remarkable-ic/assets/115460455/7ee83179-5848-40ac-91be-fa0480192465)
+![Screenshot (186)](https://github.com/neo1710/-remarkable-ic/assets/115460777/3abbf829-a843-42a5-9d90-84cca8e282bf)
 
 -Single Product Page
-![Screenshot (64)](https://github.com/neo1710/-remarkable-ic/assets/115460455/c4f587b0-3b53-47b2-ad16-8e30fa2c037e)
+![Screenshot (187)](https://github.com/neo1710/-remarkable-ic/assets/115460777/628d751b-5804-4a25-a6a3-777f1038d13c)
 
--Admin Page 
+-Admin Page
+![Screenshot (190)](https://github.com/neo1710/-remarkable-ic/assets/115460777/aa359512-7e12-4fd4-8db0-d63516c83513)
 
 -Cart Page and Checkout Page
+![Screenshot (188)](https://github.com/neo1710/-remarkable-ic/assets/115460777/a8f037e1-b628-49b8-b6bb-0d82d5721442)
+![Screenshot (189)](https://github.com/neo1710/-remarkable-ic/assets/115460777/ddedbdf1-6c50-49eb-a05c-dd14a2c202d3)
 
 # Features and Functionalities
 
