@@ -160,9 +160,7 @@ function Navbar() {
             <div style={{background:"#00472F", borderRadius:"50px",width:"26px", marginLeft:"4px" }}>
             <Text textAlign={"center"} color={"#fff"}>{count}</Text>
             </div>
-            
-            
-            
+
           </div>
         </div>
       </div>
