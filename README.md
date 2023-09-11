@@ -20,10 +20,6 @@
 
 -Samay Dhawale
 
--Neeraj Dubey
-
--Ashutosh Dubey
-
 # What we worked On
 
 -Landing Page
